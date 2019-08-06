@@ -2,3 +2,9 @@
 \.idea/
 
 node_modules/
+
+android/\.gradle/
+
+android/android\.iml
+
+android/local\.properties
