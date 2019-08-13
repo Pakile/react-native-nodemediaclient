@@ -39,7 +39,7 @@ class NodePlayerView extends PureComponent<Props> {
   pause() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodePlayer.Commands.pause,
+      UIManager.getViewManagerConfig('RCTNodePlayer').Commands.pause,
       null
     )
   }
@@ -47,7 +47,7 @@ class NodePlayerView extends PureComponent<Props> {
   start() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodePlayer.Commands.start,
+      UIManager.getViewManagerConfig('RCTNodePlayer').Commands.start,
       null
     )
   }
@@ -55,7 +55,7 @@ class NodePlayerView extends PureComponent<Props> {
   stop() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodePlayer.Commands.stop,
+      UIManager.getViewManagerConfig('RCTNodePlayer').Commands.stop,
       null
     )
   }

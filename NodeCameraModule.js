@@ -56,7 +56,7 @@ class NodeCameraView extends PureComponent<Props> {
   switchCamera() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.switchCamera,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.switchCamera,
       null
     )
   }
@@ -64,7 +64,7 @@ class NodeCameraView extends PureComponent<Props> {
   flashEnable(enable) {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.flashEnable,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.flashEnable,
       [enable]
     )
   }
@@ -72,7 +72,7 @@ class NodeCameraView extends PureComponent<Props> {
   startPreview() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.startprev,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.startprev,
       null
     )
   }
@@ -80,7 +80,7 @@ class NodeCameraView extends PureComponent<Props> {
   stopPreview() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.stopprev,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.stopprev,
       null
     )
   }
@@ -88,7 +88,7 @@ class NodeCameraView extends PureComponent<Props> {
   start() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.start,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.start,
       null
     )
   }
@@ -96,7 +96,7 @@ class NodeCameraView extends PureComponent<Props> {
   stop() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.videoRef.current),
-      UIManager.RCTNodeCamera.Commands.stop,
+      UIManager.getViewManagerConfig('RCTNodeCamera').Commands.stop,
       null
     )
   }
