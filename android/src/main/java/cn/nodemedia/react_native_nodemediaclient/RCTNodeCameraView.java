@@ -23,7 +23,7 @@ import cn.nodemedia.NodePublisherDelegate;
 
 public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventListener {
     private NodePublisher mNodePublisher;
-    private Boolean isAutoPreview = false;
+    private Boolean isAutoPreview = true;
 
     private int cameraId = -1;
     private boolean cameraFrontMirror = true;

@@ -1,6 +1,6 @@
 //
 //  RCTNodeCameraView.m
-//  
+//
 //
 //  Created by Mingliang Chen on 2017/12/12.
 //  Copyright © 2017年 NodeMedia. All rights reserved.
@@ -22,7 +22,7 @@
   self = [super init];
   if(self) {
     _np = [[NodePublisher alloc] initWithPremium:[RCTNodeMediaClient premium]];
-    _autopreview = NO;
+    _autopreview = YES;
     _outputUrl = nil;
     _camera = nil;
     _audio = nil;
