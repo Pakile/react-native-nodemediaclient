@@ -52,7 +52,7 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
             public void onEventCallback(NodePublisher nodePublisher, int i, String s) {
                 WritableMap event = Arguments.createMap();
                 event.putInt("code", i);
-                event.putString("message", "s");
+                event.putString("message", s);
                 ReactContext reactContext = (ReactContext) getContext();
                 reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
                         getId(),
