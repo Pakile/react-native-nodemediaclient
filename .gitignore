@@ -8,3 +8,7 @@ android/\.gradle/
 android/android\.iml
 
 android/local\.properties
+
+.DS_Store
+
+ios/RCTNodeMediaClient.xcodeproj/
