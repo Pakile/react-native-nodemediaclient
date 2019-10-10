@@ -108,8 +108,8 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
         mNodePublisher.stop();
     }
 
-    public int switchCam() {
-        return mNodePublisher.switchCamera();
+    public void switchCam() {
+        mNodePublisher.switchCamera();
     }
 
     public void audioPreview() {
