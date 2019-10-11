@@ -122,12 +122,12 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
 
     @Override
     public void onHostResume() {
-
+        mNodePublisher.onResume();
     }
 
     @Override
     public void onHostPause() {
-
+        mNodePublisher.onPause();
     }
 
     @Override
